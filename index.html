@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Kidds</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 
 <body>
@@ -66,21 +65,172 @@
         <a id="contact" href="contact_us.html">Contact Us</a>
         <a id="admission" href="#admission">Admission</a>
         <a id="contact" href="#">Franchise</a>
-        
-       
+
+
     </div>
     <div class="image-container">
-        <img src="static/one.jpg" alt="">
-    </div>
+        <!-- <img src="static/one.jpg" alt=""> -->
+        <!DOCTYPE html>
+        
+
     
+            
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                <!-- body {
+                    font-family: Verdana, sans-serif;
+                } -->
+
+                .mySlides {
+                    display: none;
+                }
+
+                img {
+                    vertical-align: middle;
+                    
+                }
+
+                /* Slideshow container */
+                .slideshow-container {
+                    max-width: 1460px;
+                    position: relative;
+                    margin: auto;
+                }
+
+                /* Caption text */
+                .text {
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                /* Number text (1/3 etc) */
+                .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .active {
+                    background-color: #717171;
+                }
+
+                /* Fading animation */
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                @keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                    .text {
+                        font-size: 11px
+                    }
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <!-- <h2>Automatic Slideshow</h2> -->
+            <!-- <p>Change image every 2 seconds:</p> -->
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="static/one.jpg" style="width:100%" width="1146px">
+                    <!-- <div class="text">Caption Text</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="static/two.jpg" style="width:100%">
+                    <!-- <div class="text">Caption Two</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="static/three.jpg" style="width:100%">
+                    <!-- <div class="text">Caption Three</div> -->
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+        </body>
+
+        
+
+    </div>
+
     <h1 id="abh1">Home
     </h1>
     <div class="container">
         <div class="aboutus">
-            <p> <strong>Future Kidds</strong>  is an institution that thrives on a rich heritage and tradition of an unrelenting thirst for
+            <p> <strong>Future Kidds</strong> is an institution that thrives on a rich heritage and tradition of an
+                unrelenting thirst for
                 knowledge. <br> We try to provide International standard education with Indian Values.
 
-                We, as a play school, realise our responsibility  in creating the base for Higher Education hence we
+                We, as a play school, realise our responsibility in creating the base for Higher Education hence we
                 seek
                 to make the school an even more conducive place for our faculty and students to work at their full
                 potential.
@@ -121,7 +271,7 @@
                 <a href="contact_us.html">Contact us</a>
                 <a href="#">Franchise</a>
 
-                
+
             </p>
 
             <p class="footer-company-name">Future Kidds © 2015</p>
@@ -130,7 +280,7 @@
         <div class="footer-center">
 
             <div>
-                <i class="fa fa-map-marker"z></i>
+                <i class="fa fa-map-marker" z></i>
                 <p id="corpara">Corporate Office: <br>
                     Paschimpuri Road, Kargil Crossing, <br>
                     Sikandra ,Agra U.P -202007
@@ -163,10 +313,13 @@
 
             <div class="footer-icons">
 
-                <a href="https://www.facebook.com/futurekidds.agra" target="_blank" > <img src="static/facebook.png" width="35zpx" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
-               
-                <a href="https://www.instagram.com/futurekiddsplayschool/?hl=en" target="_blank" > <img src="static/insta.jpeg" width="35px" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/future-kidds-play-school-b0738b294/" target="_blank"> <img src="static/linkdin.png" width="35px" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/futurekidds.agra" target="_blank"> <img src="static/facebook.png"
+                        width="35zpx" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com/futurekiddsplayschool/?hl=en" target="_blank"> <img
+                        src="static/insta.jpeg" width="35px" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/future-kidds-play-school-b0738b294/" target="_blank"> <img
+                        src="static/linkdin.png" width="35px" height="35spx" alt=""><i class="fa fa-facebook"></i></a>
             </div>
 
         </div>
